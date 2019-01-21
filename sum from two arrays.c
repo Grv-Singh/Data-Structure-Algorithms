@@ -1,0 +1,2 @@
+#include<stdio.h>
+void main(){int a[5],b[5],c[5],i;for(i=0;i<10;i++){if(i<5){scanf("%d-%d",&a[i],&b[i]);c[i]=a[i]+b[i];}else{printf("%d\t",c[i-5]);}}}
