@@ -1,0 +1,40 @@
+gram={'A':['Bb','Cd'],'B':['aB','l'], 'C':['cC','l']}
+#dictionary
+
+term=['b','d','a','l','c']
+#terminals
+
+nonterm=['A','B','C']
+#non terminals
+
+firstset={}
+#dictionary to hold set
+
+def first(gram,term,nonterm,ip):
+        fir=[]
+        ctr=0
+        length=0
+        if ip in term:
+            fir.extend(ip)
+        else:
+            for i in gram[ip]:
+                if i[0] in term:
+                     fir.extend(i[0])
+                else:
+                     length=len(i)
+                     while ctr<length:
+                          if 'n' in gram[i[ctr]]:
+                                fir.extend(first(i[ctr]))
+                                ctr+=1
+                          else:
+                                fir.extend(first(gram,term,nonterm,i[ctr]))
+                                break
+        firstset[ip]=fir
+        return fir
+
+for i in nonterm:
+    fi=first(gram,term,nonterm,i)
+    firstset[i]=fi
+#first set for all non terminals
+print("\nFirst Set:")
+print(firstset)
