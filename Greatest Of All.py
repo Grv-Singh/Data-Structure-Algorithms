@@ -1,3 +1,4 @@
+#code which of the numbers is greatest
 a = int(input("No.1"))
 b = int(input("No.2"))
 c = int(input("No.3"))
