@@ -1,14 +1,16 @@
 #include<stdlib.h>
 #include<conio.h>
+#include <iostream>
 using namespace std;
 
 int main(){
 
-//KMP Algorithm, String matching
+//KMP Algorithm, String matching (in-development)
 int n,m,i=0;
 
 cout<<"Input size of U(String), Size of V(String)";
-cin>>n>>" ">>m;
+cin >> n;
+cin >> m;
 
 char U[n],V[m],a='A',b='2';
 
@@ -36,7 +38,8 @@ while(i<m){
 int n1,m1,i1;
 
 cout<<"Input size of S(String), Size of T(Pattern)";
-cin>>n1>>" ">>m1;
+cin>>n1;
+cin>>m1;
 
 char S[n],T[m];
 
