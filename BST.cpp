@@ -1,3 +1,4 @@
+//code to make a BST with order(s) traversal (in-development)
 #include<iostream>
 using namespace std;
 #include<conio.h>
@@ -5,7 +6,7 @@ struct tree
 {
     tree *l,*r;
     int data;
-}*root = NULL, *p = NULL, *np = NULL, *q;
+}*root = NULL, *p = NULL, *np = NULL, *q, *temp = NULL;
 
 void create()
 {
@@ -87,8 +88,8 @@ void postorder(tree *p)
 int main()
 {
     create();
-    cout<<"printing traversal in inorder\n";
-    inorder(root);
+    //cout<<"printing traversal in inorder\n";
+    //inorder(root);
     cout<<"printing traversal in preorder\n";
     preorder(root);
     cout<<"printing traversal in postorder\n";
