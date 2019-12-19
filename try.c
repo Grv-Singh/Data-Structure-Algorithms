@@ -1,42 +1,10 @@
 #include<stdio.h>
-
+// code to a problem to find cheese (in development)
 int i,j;
 int maze[5][5]={1,1,0,1,2,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,0,1,1,0};
      char sol[5][5];
 
-void main(){
-     solve();
-}
-
-int solve(){
-    if(move_right()){
-            if(maze[i+1][j]){
-                     if(move_down()){
-                        solve();
-                    }
-            }else{if(maze[i-1][j]){
-                     if(move_up()){
-                        solve();
-                    }
-            }
-            }
-    }else{
-        if(move_left()){
-            if(maze[i+1][j]){
-                     if(move_down()){
-                        solve();
-                    }
-            }else{if(maze[i-1][j]){
-                     if(move_up()){
-                        solve();
-                    }
-            }
-            }
-        }
-    }
-}
-
-void move_up(){
+int move_up(){
     if(maze[i][j]==2){
         printf("\nGot the Cheese!\n");
     }
@@ -72,7 +40,7 @@ int move_right(){
     return 1;
 }
 
-void move_left(){
+int move_left(){
     if(maze[i][j]==2){
         printf("\nGot the Cheese!\n");
     }
@@ -83,3 +51,37 @@ void move_left(){
     printf("\n%d,%d to\n",i,j);
     return 1;
 }
+
+int solve(){
+    if(move_right()){
+            if(maze[i+1][j]){
+                     if(move_down()){
+                        solve();
+                    }
+            }else{if(maze[i-1][j]){
+                     if(move_up()){
+                        solve();
+                    }
+            }
+            }
+    }else{
+        if(move_left()){
+            if(maze[i+1][j]){
+                     if(move_down()){
+                        solve();
+                    }
+            }else{if(maze[i-1][j]){
+                     if(move_up()){
+                        solve();
+                    }
+            }
+            }
+        }
+    }
+}
+
+int main(){
+     solve();
+     return true;
+}
+
