@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include<iostream>
 using namespace std;
-
+// code to find string within a string using KMP algorithm  (in-development)
 int main(){
 
 //KMP Algorithm, String matching
