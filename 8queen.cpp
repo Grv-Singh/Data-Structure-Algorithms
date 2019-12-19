@@ -4,6 +4,7 @@
 using namespace std;
 
 int main(){
+	//code to solve 8 queen problem(testing)
 	int aray[8][8];
 	char aray1[8][8];
 	int i,j,k,l,m,n,p,q;
