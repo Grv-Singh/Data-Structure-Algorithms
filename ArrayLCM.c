@@ -1,10 +1,10 @@
 #include<stdio.h>
-
-void main(){
+// code to find LCM of array elements (in development)
+int main(){
 int a[5],i,t=1,b,j,c[100],u=0,l,m=0;
 
 for(i=0;i<5;i++){
-scanf("%d",a[i]);
+scanf("%d",&a[i]);
 }
 
 for(i=0;i<5;i++){
@@ -24,5 +24,7 @@ u++;
 for(l=0;l<m;l++){
 t=t*a[l];
 }
+printf("%d",t);
 
+return true;
 }
