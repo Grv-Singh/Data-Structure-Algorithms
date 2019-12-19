@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-	//code to find if a number is prime or not
+	//code to find if a number is prime or not (could be optimized)
 	int i,count=0,j,f;
 	for(i=2;i<=300;i++){
 		count =0;
