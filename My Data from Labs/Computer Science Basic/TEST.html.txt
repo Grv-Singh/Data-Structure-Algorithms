@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Webpage</title>
+</head>
+<frameset cols="*">
+<frame src="Name Add.html"/>
+</frameset>
+<frameset cols="50px,*">
+<frame src="Qual.html"/>
+<frame src="Fav.html"></frame>
+</frameset>
+<frameset cols="50px,*,*">
+<frame src="Scr.html"/>
+<frame src="Reminders.html"/>
+<frame src="Img.html"/>
+</frameset>
+<body>
+<a href="TEST1.html">Go to Page 2</a>
+</body>
+</html>

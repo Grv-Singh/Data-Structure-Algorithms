@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>Webpage</title>
+</head>
+<body>
+<img src="C:\Users\Public\Pictures\Sample Pictures\Jellyfish.jpg">
+</body>
+</html>

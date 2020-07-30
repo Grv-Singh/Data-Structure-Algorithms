@@ -1,0 +1,6 @@
+<html>
+<head><title>frame</title>
+</head>
+<frameset rows= "33%","33%","*">
+</frameset>
+</html>

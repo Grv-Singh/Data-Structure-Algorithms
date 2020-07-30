@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Webpage</title>
+</head>
+<body>
+<h1>Qualifications:</h1>
+<br>
+<ul>
+<li>Class 12th Passed with Merit</li>
+<li>Coder at Codechef</li>
+<li>Web Designer</li>
+<li>Public Orator</li>
+</ul>
+</body>
+</html>
