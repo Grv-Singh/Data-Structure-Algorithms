@@ -4,9 +4,6 @@
 
 Live Interaction [![Run on Repl.it](https://repl.it/badge/github/Grv-Singh/Data-Structure-Algorithms)](https://repl.it/github/Grv-Singh/Data-Structure-Algorithms)
 
-### Database Systems & Web
-![Database Structure & Web](https://raw.githubusercontent.com/Grv-Singh/Data-Structure-Algorithms/master/Laboratory/Database%20Systems%20%26%20Web/LAB2_DSW.png)
-
 Find Solutions for following Challeneges (Mathematical & Logical)
 
 * 8_queen
@@ -91,3 +88,6 @@ Find Solutions for following Challeneges (Mathematical & Logical)
 * sum_from_two_arrays
 * vase
 * win_virus
+
+### Database Systems & Web
+![Database Structure & Web](https://raw.githubusercontent.com/Grv-Singh/Data-Structure-Algorithms/master/Laboratory/Database%20Systems%20%26%20Web/LAB2_DSW.png)
