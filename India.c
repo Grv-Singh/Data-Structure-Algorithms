@@ -9,8 +9,7 @@ int main()
 	while (a != 0)
 	{
 	a = str[b++];
-		while (a-- > 6
-				4)
+		while (a-- > 64)
 		{
 			if (++c == 90)
 			{
