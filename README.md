@@ -18,7 +18,7 @@ Find my approach on following Challeneges (Mathematical & Logical)
 * median
 * HashT
 * Hexa
-* India
+* India Map
 * Instance_place_backtrack
 * KMP_String_Match
 * LCM
