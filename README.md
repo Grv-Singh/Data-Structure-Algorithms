@@ -2,7 +2,7 @@
 
 Live Interaction [![Run on Repl.it](https://repl.it/badge/github/Grv-Singh/Data-Structure-Algorithms)](https://repl.it/github/Grv-Singh/Data-Structure-Algorithms)
 
-Find my approach on following Challeneges (Mathematical & Logical)
+Find my approach on following Challeneges
 
 * 8_queen
 * Array_LCM
