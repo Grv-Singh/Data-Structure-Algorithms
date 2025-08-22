@@ -1,0 +1,311 @@
+<html>
+<head>
+<title>
+Login to Interact with your Alumni                                                                            
+</title>
+</head>
+<body>
+&nbsp;&nbsp;
+<img src="path to icon file" alt="AMS" width=100px height=100px align=bottom id="icn">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>
+<font color="red" face="" style="font-size:100px;">The Alma Mater</font><br><small>Helps you to connect with your Alumni</small>
+</b>
+<br>
+<blockquote>
+<i>
+<font color="#9690cc">
+"When you have something said in good style font, in the centre of page, annotatted by a famous personality, with some inspiring words and words good enough to give you goosebumps, it's pretty obvious to believe!!"<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></i>-The Leader
+</blockquote>
+<table width=100%>
+<tr>
+<td>
+<table align="center">
+<tr>
+<td colspan=2>
+<center>
+Login
+</center>
+<form name="register" action="checklogin.php" method="post">
+</td>
+</tr>
+<tr>
+<td>
+Username
+</td>
+<td>
+<input type="text" required id="inpuser" name="inpuser"/>
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+<input type="password" required id="inppass" name="inppass"/>
+</td>
+</tr>
+<tr>
+<td>
+<input type="image" name="submit" src="path to image for login button"/>
+</td>
+</tr>
+<tr>
+<td>
+<a href="mailto:ouremailid@gmail.com">Forgot Password?</a>
+</form>
+</td>
+</tr>
+</table>
+</td>
+<td>
+<table align="center">
+<tr>
+<td colspan=4>
+<center>
+Sign Up
+</center>
+<form name='register' action="signup_confirm.php" method="post">
+</td>
+</tr>
+<tr>
+<td>
+Full Name
+</td>
+<td>
+<input type="text" required="required" name="fullname"/>
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+<input type="password" required="required" name="password"/>
+</td>
+</tr>
+<tr>
+<td>
+Enrollment No.
+</td>
+<td>
+<input type="text" required="required" name="enroll"/>
+</td>
+</tr>
+<tr>
+<td>
+Year
+</td>
+<td>
+<select name="year">
+<option name="1" value="1">1<sup>st</sup></option>
+<option name="2" value="2">2<sup>nd</sup></option>
+<option name="3" value="3">3<sup>rd</sup></option>
+<option name="4" value="4">4<sup>th</sup></option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Batch
+</td>
+<td>
+<input type="text" name="batch"/>
+</td>
+</tr>
+<tr>
+<td>
+Gender
+</td>
+<td>
+Male:<input type="radio" name="male"/>&nbsp;Female:<input type="radio" name="female"/>
+</td>
+</tr>
+<tr>
+<td>
+Upload CV:
+</td>
+<td>
+<input type="file" name="cv"/>
+</td>
+</tr>
+<tr>
+<td>
+Birthday
+</td>
+<td>
+<select name="date">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+&nbsp;
+<select name="month">
+<option value="1">Jan</option>
+<option value="2">Feb</option>
+<option value="3">Mar</option>
+<option value="4">Apr</option>
+<option value="5">May</option>
+<option value="6">Jun</option>
+<option value="7">Jul</option>
+<option value="8">Aug</option>
+<option value="9">Sep</option>
+<option value="10">Oct</option>
+<option value="11">Nov</option>
+<option value="12">Dec<option>
+</select>
+&nbsp;
+<select name="year">
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+<option value="1996">1996</option>
+<option value="1995">1995</option>
+<option value="1994">1994</option>
+<option value="1993">1993</option>
+<option value="1992">1992</option>
+<option value="1991">1991</option>
+<option value="1990">1990</option>
+<option value="1989">1989</option>
+<option value="1988">1988<option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Email ID
+</td>
+<td>
+<input type="email" required  name="email"/>
+</td>
+</tr>
+<tr>
+<td
+</td>
+<td>
+<textarea rows="5" cols="20" placeholder="Describe Yourself!!" name="desc"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+<input type="image" src="path to image for sign up button" name="img"/>
+</form>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+</body>
+</html>
+<?php	
+	$db_name = "users_db";
+	$db_server = mysql_connect('localhost','root','password');
+	if(!$db_server){
+		echo "Unable to connect to MySQl, error: ".mysql_error();
+		}
+	$btest = mysql_select_db($db_name);
+	if(!$btest){
+		echo "Unable to connect to DB!";
+		}
+	if(isset($_POST['fullname'])){
+		$fullname = trim($_POST['fullname']);
+	}else{
+		$fullname = '';
+	}
+	if(isset($_POST['password'])){
+		$password = trim($_POST['password']);
+	}else{
+		$password = '';
+	}
+	if(isset($_POST['enroll'])){
+		$enroll = trim($_POST['enroll']);
+	}else{
+		$enroll = '';
+	}
+	if(isset($_POST['year'])){
+		$year = trim($_POST['year']);
+	}else{
+		$year = '';
+	}
+	if(isset($_POST['batch'])){
+		$batch = trim($_POST['batch']);
+	}else{
+		$batch = '';
+	}
+	if(isset($_POST['gender'])){
+		$gender = trim($_POST['gender']);
+	}else{
+		$gender = '';
+	}
+	if(isset($_POST['dob'])){
+		$dob = trim($_POST['dob']);
+	}else{
+		$dob = '';
+	}
+	if(isset($_POST['mob'])){
+		$mob = trim($_POST['mob']);
+	}else{
+		$mob = '';
+	}
+	if(isset($_POST['yob'])){
+		$yob = trim($_POST['yob']);
+	}else{
+		$yob = '';
+	}
+	if(isset($_POST['email'])){
+		$email = trim($_POST['email']);
+	}else{
+		$email = '';
+	}
+	if(isset($_POST['desc'])){
+		$desc = trim($_POST['desc']);
+	}else{
+		$desc = '';
+	}	
+	if(empty($fullname)||empty($password)||empty($enroll)||empty($year)||empty($batch)||empty($gender)||empty($dob)||empty($mob)||empty($yob)||empty($email)||empty($desc)){
+		$rtncode = '';
+	}else{
+		$rtncode = insert($db_server, $fullname, $password, $enroll, $year, $batch, $gender, $dob, $mob, $yob, $email, $desc);
+	}
+	
+	function insert($db_server, $fullname, $password, $enroll, $year, $batch, $gender, $dob, $mob, $yob, $email, $desc){
+		$statement = "insert into users (fullname,password,enroll,year,batch,gender,dob,mob,yob,email,desc) values("."'".$fullname."','".$password."',".$enroll.",".$year.",'".$batch."','".$gender."',".$dob.",".$mob.",".$yob.",'".$email."','".$desc."')";
+	
+	$result = mysql_query($statement);
+
+	if($result){
+		echo "<br>Hey! ".$fullname." Welcome Aboard";
+	}else{
+		echo "<br>Please Retry!";		
+	}
+
+	}
+?>
